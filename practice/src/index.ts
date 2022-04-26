@@ -1,3 +1,12 @@
-const message: string = 'Hello World!'
+import { createInterface } from 'readline'
 
-console.log(message)
+const rl = createInterface({
+  input: process.stdin,
+  output: process.stdout
+})
+
+rl.question('Input strings:', (line) => {
+  const result = BigInt(line)
+  console.log(`You input ${result}`)
+  rl.close()
+})
