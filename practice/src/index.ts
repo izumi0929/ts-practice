@@ -12,14 +12,17 @@
 // })
 let fizbuzz = ''
 for (let i = 1; i <= 100; i++) {
+  if (i !== 1) {
+    fizbuzz += ' '
+  }
   if (i % 3 === 0 && i % 5 === 0) {
-    fizbuzz += 'FizzBuzz '
+    fizbuzz += 'FizzBuzz'
   } else if (i % 3 === 0) {
-    fizbuzz += 'Fizz '
+    fizbuzz += 'Fizz'
   } else if (i % 5 === 0) {
-    fizbuzz += 'Buzz '
+    fizbuzz += 'Buzz'
   } else {
-    fizbuzz += i + ' '
+    fizbuzz += i
   }
 }
 console.log(fizbuzz)
