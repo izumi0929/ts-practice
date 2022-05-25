@@ -10,7 +10,10 @@ const getFizzBuzzString = (num: number) => {
   }
 }
 
-for (let i = 1; i <= 100; i++) {
+const sequence = (from: number, to: number) =>
+  [...Array(to)].map((_, i) => i + from)
+
+for (const i of sequence(1, 20)) {
   const message = getFizzBuzzString(i)
   console.log(message)
 }
