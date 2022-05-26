@@ -1,5 +1,5 @@
 const map = <T, S>(array: T[], callback: (num: T) => S): S[] => {
-  let n = []
+  const n: S[] = []
   for (const i of array) {
     n.push(callback(i))
   }
