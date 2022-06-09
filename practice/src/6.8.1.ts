@@ -1,5 +1,7 @@
 export {}
 
+//タグ付きユニオン
+
 type HasT<T> = {
   tag: 'hasT'
   value: T
